@@ -7,7 +7,5 @@ Subpower <- subset(Power, Power$Date=="1/2/2007" | Power$Date == "2/2/2007")
 ##Creating PNG file and Calling Plot function.
 png("plot1.png", width = 480, height = 480)
 hist(as.numeric(as.character(Subpower$Global_Active_Power)), col = "red", main="Global Active Power", xlab = "Global Active Power(kilowatts)")
-dev.off()
-
-##Labeling the plot
 title(main="Global Active Power")
+dev.off()
